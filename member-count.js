@@ -1,5 +1,5 @@
 module.exports = (client) => {
-    const channelId = '785751499611439124'
+    const channelId = '' //channel in which you want to show the member count
   
     const updateMembers = (guild) => {
       const channel = guild.channels.cache.get(channelId)
@@ -9,6 +9,6 @@ module.exports = (client) => {
     client.on('guildMemberAdd', (member) => updateMembers(member.guild))
     client.on('guildMemberRemove', (member) => updateMembers(member.guild))
   
-    const guild = client.guilds.cache.get('785396658451251221')
+    const guild = client.guilds.cache.get('')  //channel from which you want to get the member list
     updateMembers(guild)
   }
