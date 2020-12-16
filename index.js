@@ -55,7 +55,7 @@ client.on('ready', () => {
 
     privateMessage(client, 'ping', 'Pong!')
 
-    client.users.fetch('748412468447150081').then((user) => {
+    client.users.fetch('//user id here').then((user) => {
       user.send('Im here bruhh')
     })
 
